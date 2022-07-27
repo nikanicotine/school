@@ -1,19 +1,19 @@
-import logo from '../logo.svg';
 import '../App.css';
-import {Breadcrumb, Button, Cascader, Divider, Dropdown, Menu, Space, Switch} from "antd";
-import Input from "antd/es/input/Input";
-import Layout, {Content, Footer, Header} from "antd/es/layout/layout";
-import {MailOutlined, AppstoreOutlined, SettingOutlined} from '@ant-design/icons';
-import {useState} from "react";
+import {UpOutlined} from '@ant-design/icons';
 
-const FooterInfo = () => {
+const BtnScrollUp = () => {
+    const handlerScrollUp = () => {
+        if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+            window.scrollTo({
+                top: 0,
+                left: 0,
+                behavior: 'smooth',
+            });
+        }
+    }
     return (
-        <Footer
-            // className='footer'
-        >
-            Какая-то херня ©2022 Created by Nikich 🥰 ❤
-        </Footer>
+        <div  onClick={handlerScrollUp}><UpOutlined className='scroll-up'/></div>
     )
 };
 
-export default FooterInfo;
+export default BtnScrollUp;

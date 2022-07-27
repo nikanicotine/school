@@ -1,12 +1,6 @@
-import logo from '../logo.svg';
 import '../App.css';
-import {Breadcrumb, Button, Cascader, Divider, Dropdown, Menu, Space, Switch} from "antd";
-import Input from "antd/es/input/Input";
-import Layout, {Content, Footer, Header} from "antd/es/layout/layout";
-import {MailOutlined, AppstoreOutlined, SettingOutlined} from '@ant-design/icons';
-import {useState} from "react";
-import MainMenu from "../components/MainMenu";
-import FooterInfo from "../components/FooterInfo";
+import {Divider} from "antd";
+import {Content} from "antd/es/layout/layout";
 
 const CurriculumPage = () => {
     return (

@@ -1,38 +1,94 @@
+@import '~antd/dist/antd.css';
+
 .App {
-  text-align: center;
+    text-align: center;
 }
 
+/*.App-logo {*/
+/*    height: 4vmin;*/
+/*    pointer-events: none;*/
+/*}*/
+
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+    /*height: 4vmin;*/
+    pointer-events: none;
+    float: left;
+    width: 150px;
+    height: 40px;
+    margin: 16px 24px 16px 0;
+}
+
+.header {
+    position: fixed;
+    /*z-index: 1;*/
+    width: 100%;
+    user-select: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
+/*.App-header {*/
+/*  background-color: #282c34;*/
+/*  min-height: 100vh;*/
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*  align-items: center;*/
+/*  justify-content: center;*/
+/*  font-size: calc(10px + 2vmin);*/
+/*  color: white;*/
+/*}*/
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/*#components-layout-demo-fixed .logo {*/
+/*    float: left;*/
+/*    width: 120px;*/
+/*    height: 31px;*/
+/*    margin: 16px 24px 16px 0;*/
+/*    background: rgba(255, 255, 255, 0.2);*/
+/*}*/
+
+.site-layout .site-layout-background {
+    background: #fff;
+    height: 100vh;
+    /*min-height: calc(100vh - 100px);*/
+}
+
+Footer {
+    /*min-height: calc(100vh - 80px);*/
+    flex: 0 0 auto;
+    text-align: center;
+    user-select: none;
+
+    /*height: 8vh;*/
+    /*background-color: cadetblue;*/
+    /*flex-grow: 0; !*Запрещаем увеличиваться*!*/
+    /*flex-shrink: 0; !*Запрещаем сжиматься*!*/
+    /*flex-basis: auto;*/
+}
+
+.content-style {
+    height: 160px;
+    color: #fff;
+    line-height: 160px;
+    text-align: center;
+    background: #364d79;
+}
+
+.scroll-up {
+    cursor: pointer;
+    bottom: 25px;
+    right: 20px;
+    position: fixed;
 }
